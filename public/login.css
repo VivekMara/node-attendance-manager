@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #000000;
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    font-size: large;
+    font-weight: 800;
+    background-color: yellowgreen;
+}
+
+button:hover {
+    transform: scale(1.05);
+}

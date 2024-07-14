@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="taskview.css">
+</head>
+<body>
+    <h1>Welcome, <%= username %></h1>
+    <div class="addtaskcontainer">
+        <div>
+            <h1>Add Task</h1>
+            <form action="/task/addtask" method="post">
+            <input type="text" name="task" id="task">
+            <button type="submit">Add Task</button>
+            </form>
+        </div>
+        <div class="taskscontainer">
+            <% for( const index of task ) { %>
+            <ul>
+                <li><%= index %></li>
+                <button type="submit" onclick="completetask()">Mark Completed!!</button>
+            </ul>
+            <% } %>
+
+        </div>
+
+    </div>
+</body>
+</html>
